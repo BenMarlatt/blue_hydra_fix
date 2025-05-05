@@ -6,6 +6,7 @@ if ! command -v blue_hydra &> /dev/null; then
 
     # Install blue_hydra
     echo "blue_hydra is not installed"
+    cd ../
     git clone https://github.com/ZeroChaos-/blue_hydra.git
     cd blue_hydra
     sudo apt-get update
