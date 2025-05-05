@@ -8,6 +8,7 @@ if ! command -v blue_hydra &> /dev/null; then
     echo "blue_hydra is not installed"
     git clone https://github.com/ZeroChaos-/blue_hydra.git
     cd blue_hydra
+    sudo apt-get update
     sudo apt-get install bluez bluez-test-scripts python3-bluez python3-dbus libsqlite3-dev ruby-full bundler -y
     sudo gem install bundler
     sudo bundle install
